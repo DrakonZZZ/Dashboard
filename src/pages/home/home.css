@@ -12,3 +12,10 @@
     padding: 1.2rem;
 
 }
+
+.charts-section {
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
