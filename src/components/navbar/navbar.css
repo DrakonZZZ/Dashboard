@@ -1,0 +1,73 @@
+.navbar-section {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--text-primary-100)
+}
+
+.wrapper {
+    width: 100%;
+    padding: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    padding: 0.3rem;
+}
+
+.search>input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.search>input::placeholder {
+    color: rgba(65, 166, 132, 0.44);
+}
+
+.wrapper .items {
+    display: flex;
+    gap: 1rem;
+}
+
+.wrapper .items .item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-icon {
+    font-size: 1.1rem;
+}
+
+
+
+.wrapper .items .badge-count {
+    font-size: 0.5rem;
+    font-weight: 600;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--primary-color-100);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+}
+
+
+
+
+.wrapper .items .pfp {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}

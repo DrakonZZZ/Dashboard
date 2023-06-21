@@ -1,0 +1,14 @@
+.home-content {
+    display: flex;
+}
+
+.home-container {
+    flex: 6;
+}
+
+.widgets-section {
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+
+}
