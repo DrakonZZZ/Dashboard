@@ -40,7 +40,37 @@
 }
 
 .detail-bottom-description {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: rgb(177, 177, 177);
     text-align: center;
+}
+
+.detailed-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailed-info .item {
+    text-align: center;
+}
+
+.detailed-info .item-title {
+    color: rgb(177, 177, 177);
+    margin-bottom: 0.5rem;
+}
+
+.detailed-info .item-result {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.detailedinfo .pos {
+    color: rgba(39, 252, 32, 0.955);
+}
+
+.detailed-info .neg {
+    color: rgba(252, 32, 32, 0.955);
 }

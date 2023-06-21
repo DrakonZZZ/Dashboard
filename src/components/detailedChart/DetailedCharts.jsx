@@ -1,4 +1,8 @@
-import { MdOutlineMoreVert } from 'react-icons/md';
+import {
+  MdOutlineMoreVert,
+  MdKeyboardArrowDown,
+  MdKeyboardArrowUp,
+} from 'react-icons/md';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import './detailChart.css';
@@ -24,10 +28,33 @@ const DetailedCharts = () => {
           />
         </div>
         <p className="detail-bottom-title">Today's Earning</p>
-        <p className="detail-bottom-amount">$420</p>
+        <p className="detail-bottom-amount">$612</p>
         <p className="detail-bottom-description">
           All transaction are processed.
         </p>
+        <div className="detailed-info">
+          <div className="item">
+            <div className="item-title">Target</div>
+            <div className="item-result neg">
+              <MdKeyboardArrowDown />
+              <div className="result-earning ">$7.2k</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="item-title">Target</div>
+            <div className="item-result  pos">
+              <MdKeyboardArrowUp />
+              <div className="result-earning">$7.2k</div>
+            </div>
+          </div>
+          <div className="item">
+            <div className="item-title">Target</div>
+            <div className="item-result neg">
+              <MdKeyboardArrowDown />
+              <div className="result-earning">$7.2k</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

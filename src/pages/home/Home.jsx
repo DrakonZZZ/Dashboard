@@ -3,6 +3,7 @@ import DetailedCharts from '../../components/detailedChart/DetailedCharts';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widget/Widget';
+import Tab from '../../components/table/Table';
 import './home.css';
 const Home = () => {
   return (
@@ -19,6 +20,10 @@ const Home = () => {
         <div className="charts-section">
           <DetailedCharts />
           <Chart />
+        </div>
+        <div className="list-section">
+          <div className="list-title">Recent Transactions</div>
+          <Tab />
         </div>
       </div>
     </div>

@@ -1,0 +1,30 @@
+.tb-cell-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tb-img {
+    object-fit: cover;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    margin-right: 0.8rem;
+}
+
+.tb-status-Pending {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: rgb(198, 169, 38);
+    background-color: rgb(255, 241, 149);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}
+
+.tb-status-Approved {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: rgb(66, 199, 66);
+    background-color: rgb(157, 250, 157);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+}

@@ -88,7 +88,7 @@ const Widget = ({ type }) => {
         <span className="link">{input.link}</span>
       </div>
       <div className="widget-right">
-        <div className="percentage neg">
+        <div className="percentage pos">
           <IoIosArrowUp />
           {perc}%
         </div>
