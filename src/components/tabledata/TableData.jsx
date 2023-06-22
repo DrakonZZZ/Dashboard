@@ -1,5 +1,7 @@
 import { rows, columns } from './tbData';
 import { DataGrid } from '@mui/x-data-grid';
+import { Link } from 'react-router-dom';
+import { AiOutlinePlus } from 'react-icons/ai';
 import './tabledata.css';
 
 const TableData = () => {
@@ -11,7 +13,9 @@ const TableData = () => {
       renderCell: (params) => {
         return (
           <div className="action-cell">
-            <div className="view-btn">View</div>
+            <Link to="/users/avatar" className="link">
+              <div className="view-btn">View</div>
+            </Link>
             <div className="delete-btn">Delete</div>
           </div>
         );
@@ -20,6 +24,12 @@ const TableData = () => {
   ];
   return (
     <div className="table-container">
+      <div className="table-data-title">
+        <Link to="/users/entry" className="link">
+          New User
+          <AiOutlinePlus />
+        </Link>
+      </div>
       <DataGrid
         rows={rows}
         columns={[...columns, ...actionCol]}

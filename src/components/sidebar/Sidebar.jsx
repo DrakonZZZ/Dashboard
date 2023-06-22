@@ -16,12 +16,16 @@ import { CgProfile } from 'react-icons/cg';
 import { TbTruckDelivery } from 'react-icons/tb';
 import './sidebar.css';
 
+import { Link } from 'react-router-dom';
+
 const Sidebar = () => {
   return (
     <div className="sidebar-section">
       <div className="side-top">
         <div className="logo">
-          <h3>WickedAdmin</h3>
+          <Link to="/" className="admin-link">
+            <h3>WickedAdmin</h3>
+          </Link>
         </div>
       </div>
       <hr />
@@ -29,17 +33,23 @@ const Sidebar = () => {
         <ul>
           <span className="side-category">Main</span>
           <li>
-            <LuLayoutDashboard className="side-icon" />
-            <span>Dashboard</span>
+            <Link to="/" className="link">
+              <LuLayoutDashboard className="side-icon" />
+              <span>Dashboard</span>
+            </Link>
           </li>
           <span className="side-category">Lists</span>
           <li>
-            <BiUser className="side-icon" />
-            <span>Users</span>
+            <Link to="/users" className="link">
+              <BiUser className="side-icon" />
+              <span>Users</span>
+            </Link>
           </li>
           <li>
-            <MdProductionQuantityLimits className="side-icon" />
-            <span>Products</span>
+            <Link to="/products" className="link">
+              <MdProductionQuantityLimits className="side-icon" />
+              <span>Products</span>
+            </Link>
           </li>
           <li>
             <BiCreditCardAlt className="side-icon" />
