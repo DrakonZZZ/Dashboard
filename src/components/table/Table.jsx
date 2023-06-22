@@ -10,7 +10,7 @@ import './table.css';
 
 const Tab = () => {
   return (
-    <TableContainer component={Paper} className="table-container">
+    <TableContainer component={Paper} className="table-container" elevation={0}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>

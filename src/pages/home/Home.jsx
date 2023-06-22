@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <div className="charts-section">
           <DetailedCharts />
-          <Chart />
+          <Chart chartTitle="Net Revenue (Last 12 months)" ratio={2 / 1} />
         </div>
         <div className="list-section">
           <div className="list-title">Recent Transactions</div>
