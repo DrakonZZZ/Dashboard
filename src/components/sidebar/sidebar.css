@@ -103,3 +103,22 @@
 .profile-color:nth-child(2) {
     background-color: rgb(88, 88, 88);
 }
+
+@media only screen and (max-width: 650px) {
+
+    .side-category {
+        display: flex;
+        justify-content: center;
+    }
+
+    .side-middle>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .side-middle>ul>li {
+        border-radius: 5px;
+    }
+}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
   {
