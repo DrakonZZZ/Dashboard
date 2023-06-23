@@ -1,7 +1,7 @@
 import { createContext, useReducer } from 'react';
 
 export const ThemeGlobalContext = createContext({
-  darkMode: false,
+  darkMode: true,
 });
 
 export const ThemeContextProvider = ({ children }) => {
@@ -22,7 +22,7 @@ export const ThemeContextProvider = ({ children }) => {
           return state;
       }
     },
-    { darkMode: false }
+    { darkMode: true }
   );
 
   return (
