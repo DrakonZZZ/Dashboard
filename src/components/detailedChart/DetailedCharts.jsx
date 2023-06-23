@@ -23,7 +23,7 @@ const DetailedCharts = () => {
             styles={buildStyles({
               pathColor: 'rgb(32, 217, 156)',
               textColor: 'rgb(32, 217, 156)',
-              trailColor: 'rgb(167, 251, 223);',
+              trailColor: '#c8fae7',
             })}
           />
         </div>

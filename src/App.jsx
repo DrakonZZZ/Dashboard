@@ -1,9 +1,12 @@
 import Layout from './pages/Layout';
+import { ThemeContextProvider } from './pages/darkModeContext';
 
 function App() {
   return (
     <>
-      <Layout />
+      <ThemeContextProvider>
+        <Layout />
+      </ThemeContextProvider>
     </>
   );
 }

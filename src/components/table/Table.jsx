@@ -6,12 +6,11 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { Link } from 'react-router-dom';
 import './table.css';
 
 const Tab = () => {
   return (
-    <TableContainer component={Paper} className="table-container" elevation={0}>
+    <TableContainer component={Paper} elevation={0} className="table-section">
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -27,18 +26,18 @@ const Tab = () => {
         <TableBody>
           {rows.map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.id}</TableCell>
-              <TableCell>
+              <TableCell className="tb-cell">{row.id}</TableCell>
+              <TableCell className="tb-cell">
                 <div className="tb-cell-wrapper">
                   <img src={row.img} alt="" className="tb-img" />
                   {row.product}
                 </div>
               </TableCell>
-              <TableCell>{row.customer}</TableCell>
-              <TableCell>{row.date}</TableCell>
-              <TableCell>{row.price}</TableCell>
-              <TableCell>{row.mode}</TableCell>
-              <TableCell>
+              <TableCell className="tb-cell">{row.customer}</TableCell>
+              <TableCell className="tb-cell">{row.date}</TableCell>
+              <TableCell className="tb-cell">{row.price}</TableCell>
+              <TableCell className="tb-cell">{row.mode}</TableCell>
+              <TableCell className="tb-cell">
                 <span className={`tb-status-${row.status}`}>{row.status}</span>
               </TableCell>
             </TableRow>

@@ -2,13 +2,18 @@ import { BsSearch } from 'react-icons/bs';
 import { LuLanguages } from 'react-icons/lu';
 import {
   MdOutlineDarkMode,
+  MdOutlineLightMode,
   MdFullscreen,
   MdNotificationsNone,
 } from 'react-icons/md';
 import { BsChatSquare, BsCardList } from 'react-icons/bs';
 import './navbar.css';
+import { useContext } from 'react';
+import { ThemeGlobalContext } from '../../pages/darkModeContext';
 
 const Navbar = () => {
+  const { darkMode, dispatch } = useContext(ThemeGlobalContext);
+  console.log(darkMode);
   return (
     <div className="navbar-section">
       <div className="wrapper">
@@ -25,7 +30,17 @@ const Navbar = () => {
             <p className="badge-count">1</p>
           </div>
           <div className="item">
-            <MdOutlineDarkMode className="nav-icon" />
+            {darkMode ? (
+              <MdOutlineLightMode
+                className="nav-icon"
+                onClick={() => dispatch({ type: 'TOGGLE' })}
+              />
+            ) : (
+              <MdOutlineDarkMode
+                className="nav-icon"
+                onClick={() => dispatch({ type: 'TOGGLE' })}
+              />
+            )}
           </div>
           <div className="item">
             <BsChatSquare className="nav-icon" />

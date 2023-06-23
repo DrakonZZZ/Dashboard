@@ -1,0 +1,87 @@
+.dark-theme {
+    background-color: rgb(47, 47, 47);
+}
+
+/* SIDE-BAR styling */
+
+.dark-theme .sidebar-section {
+    background-color: rgb(35, 35, 35);
+    color: rgb(207, 207, 207);
+}
+
+.dark-theme .sidebar-section .link {
+    color: rgb(204, 204, 204);
+}
+
+.dark-theme .side-middle>ul>li {
+    color: rgb(204, 204, 204);
+}
+
+.dark-theme .side-middle>ul>li:hover .side-icon {
+    color: white;
+}
+
+/* NAVBAR styling */
+
+.dark-theme .navbar-section {
+    color: rgb(207, 207, 207);
+}
+
+.dark-theme .search {
+    border: 0.5px solid var(--primary-color-100);
+}
+
+.dark-theme .navbar-section .search>input {
+    color: white;
+}
+
+.dark-theme .navbar-section .search>input::placeholder {
+    color: rgb(131, 131, 131);
+}
+
+.dark-theme .nav-icon {
+    color: rgb(207, 207, 207);
+}
+
+/* WIDGET styling */
+
+.dark-theme .widget-container {
+    background-color: rgb(35, 35, 35);
+
+}
+
+/* CHART styling */
+
+.dark-theme .detailed-container {
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* TABLE styling */
+
+.dark-theme .table-section {
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.dark-theme .tb-cell {
+    color: rgb(204, 204, 204);
+    border-bottom: 1px solid rgba(47, 47, 47, 0.739);
+}
+
+/* LIST styling */
+
+.dark-theme .table-grid {
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: rgb(204, 204, 204);
+    border: none;
+}
+
+/* NEWENTRY styling */
+
+.dark-theme .entry-bottom {
+    color: gray;
+    background-color: rgb(35, 35, 35);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

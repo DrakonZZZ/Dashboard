@@ -1,3 +1,7 @@
+.table-container {
+    height: fit-content;
+}
+
 .tb-cell-wrapper {
     display: flex;
     align-items: center;

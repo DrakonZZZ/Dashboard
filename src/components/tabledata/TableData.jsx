@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { rows, columns } from './tbData';
 import { DataGrid } from '@mui/x-data-grid';
 import { Link } from 'react-router-dom';
@@ -5,6 +6,11 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import './tabledata.css';
 
 const TableData = () => {
+  const [data, setData] = useState(rows);
+  const removeItem = (id) => {
+    const newList = data.filter((item) => item.id !== id);
+    setData(newList);
+  };
   const actionCol = [
     {
       field: 'action',
@@ -16,7 +22,12 @@ const TableData = () => {
             <Link to="/users/avatar" className="link">
               <div className="view-btn">View</div>
             </Link>
-            <div className="delete-btn">Delete</div>
+            <div
+              className="delete-btn"
+              onClick={() => removeItem(params.row.id)}
+            >
+              Delete
+            </div>
           </div>
         );
       },
@@ -31,7 +42,7 @@ const TableData = () => {
         </Link>
       </div>
       <DataGrid
-        rows={rows}
+        rows={data}
         columns={[...columns, ...actionCol]}
         initialState={{
           pagination: {
@@ -39,7 +50,7 @@ const TableData = () => {
           },
         }}
         pageSizeOptions={[5, 10]}
-        checkboxSelection
+        className="table-grid"
       />
     </div>
   );

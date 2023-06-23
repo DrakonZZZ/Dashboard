@@ -84,6 +84,7 @@
     border: none;
     outline: none;
     padding: 0.2rem;
+    background-color: transparent;
     border-bottom: 1px solid var(--primary-color-100);
     color: var(--primary-color-100)
 }

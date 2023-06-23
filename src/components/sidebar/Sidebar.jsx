@@ -17,8 +17,11 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import './sidebar.css';
 
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { ThemeGlobalContext } from '../../pages/darkModeContext';
 
 const Sidebar = () => {
+  const { dispatch } = useContext(ThemeGlobalContext);
   return (
     <div className="sidebar-section">
       <div className="side-top">
@@ -93,8 +96,14 @@ const Sidebar = () => {
       </div>
       <span className="side-category">Theme</span>
       <div className="side-bottom">
-        <div className="profile-color"></div>
-        <div className="profile-color"></div>
+        <div
+          className="profile-color"
+          onClick={() => dispatch({ type: 'LIGHT' })}
+        ></div>
+        <div
+          className="profile-color"
+          onClick={() => dispatch({ type: 'DARK' })}
+        ></div>
       </div>
     </div>
   );
