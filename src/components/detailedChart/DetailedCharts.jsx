@@ -4,8 +4,8 @@ import {
   MdKeyboardArrowUp,
 } from 'react-icons/md';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 import './detailChart.css';
+import 'react-circular-progressbar/dist/styles.css';
 
 const DetailedCharts = () => {
   return (
