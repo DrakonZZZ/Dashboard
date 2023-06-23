@@ -1,5 +1,6 @@
 .admin-link {
     text-decoration: none;
+    color: var(--primary-color-100);
 }
 
 .admin-link:visited {
@@ -8,6 +9,7 @@
 
 .link {
     text-decoration: none;
+    color: var(--primary-color-100);
 }
 
 .link:active {
