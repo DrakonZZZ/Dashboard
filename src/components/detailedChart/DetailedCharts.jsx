@@ -27,7 +27,7 @@ const DetailedCharts = () => {
             })}
           />
         </div>
-        <p className="detail-bottom-title">Today's Earning</p>
+        <p className="detail-bottom-title">Daily Earning</p>
         <p className="detail-bottom-amount">$612</p>
         <p className="detail-bottom-description">
           All transaction are processed.
