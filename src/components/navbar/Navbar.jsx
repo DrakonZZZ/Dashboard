@@ -13,7 +13,6 @@ import { ThemeGlobalContext } from '../../pages/darkModeContext';
 
 const Navbar = () => {
   const { darkMode, dispatch } = useContext(ThemeGlobalContext);
-  console.log(darkMode);
   return (
     <div className="navbar-section">
       <div className="wrapper">

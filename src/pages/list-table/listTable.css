@@ -1,0 +1,12 @@
+.list-table {
+    width: 100%;
+    display: flex;
+}
+
+.list-table-container {
+    flex: 6;
+}
+
+.list-tb {
+    padding: 1rem;
+}

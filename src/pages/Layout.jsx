@@ -3,6 +3,7 @@ import Home from './home/Home';
 import Login from './login/Login';
 import Entry from './newEntry/Entry';
 import List from './list/List';
+import ListTable from './list-table/ListTable';
 import Single from './single/Single';
 import { userData, productData } from './formData';
 import { useContext } from 'react';
@@ -28,7 +29,7 @@ const Layout = () => {
               />
             </Route>
             <Route path="products">
-              <Route index element={<List />} />
+              <Route index element={<ListTable />} />
               <Route path=":productId" element={<Single />} />
               <Route
                 path="entry"
